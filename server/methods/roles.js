@@ -6,7 +6,7 @@ Meteor.methods({
 
     // Placeholder variable for role check
     var roleIsUndefined;
-    
+
     // Placeholder array for role names
     var roleNames = [];
 
@@ -14,14 +14,14 @@ Meteor.methods({
     var roles = Meteor.roles.find().fetch();
 
     // Add each role name to the roleNames array
-    var roles.forEach(function (role) {
+    roles.forEach(function (role) {
       // Add role name to role names array
       roleNames.push(role.name);
     });
 
     // Check if role is already defined
     var roleIndex = roleNames.indexOf(roleName);
-    
+
     // Convert the role index to a boolean value
     roleIsUndefined = (roleIndex >= 0) ? false : true;
 
