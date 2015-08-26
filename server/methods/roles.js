@@ -5,7 +5,7 @@ Meteor.methods({
     */
 
     // Placeholder variable for role check
-    var roleExists;
+    var roleIsUndefined;
     
     // Placeholder array for role names
     var roleNames = [];
@@ -23,7 +23,7 @@ Meteor.methods({
     var roleIndex = roleNames.indexOf(roleName);
     
     // Convert the role index to a boolean value
-    var roleIsUndefined = (roleIndex >= 0) ? false : true;
+    roleIsUndefined = (roleIndex >= 0) ? false : true;
 
     // Create the admin role if it is undefined
     if (roleIsUndefined) {
