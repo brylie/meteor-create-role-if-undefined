@@ -1,8 +1,7 @@
 Meteor.methods({
   "createRoleIfUndefined": function (roleName) {
     /*
-    Check if a given role exists
-    create the role if it doesn't exist
+    Create a given role if it is undefined
     */
 
     // Placeholder variable for role check
