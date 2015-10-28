@@ -10,6 +10,7 @@ Package.on_use(function (api, where) {
   api.versionsFrom("1.0.1");
   
   // Dependencies
+  api.use("check", "server");
   api.use("alanning:roles@1.2.11", "server");
 
   // Files

@@ -4,6 +4,9 @@ Meteor.methods({
     Create a given role if it is undefined
     */
 
+    // It's a good idea to check your arguments
+    check(roleName, String);
+
     // Placeholder variable for role check
     var roleIsUndefined;
 
